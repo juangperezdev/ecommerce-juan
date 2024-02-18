@@ -1,6 +1,5 @@
 // src/Navbar.jsx
-import React from 'react';
-//import reactLogo from './src/assets/react.svg'
+import React from 'react'
 import logo from '/logo-restaurant.png'
 
 const Navbar = () => {
