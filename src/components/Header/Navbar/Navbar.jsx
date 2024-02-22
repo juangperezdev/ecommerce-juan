@@ -1,23 +1,19 @@
 // src/Navbar.jsx
 import React from 'react'
 import logo from '/logo-restaurant.png'
+import CartWidget from '../CartWidget/CartWidget'
 
 const Navbar = () => {
     return (
-      <nav className="bg-gray-800 p-4 sticky top-0 z-10">
-        <div className="flex items-center justify-between w-full p20" >
-          <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-8 w-18 mr-2" />
-          <span className="text-white text-lg pr-4 font-semibold">Menú Online</span>
-          </div>
+      
+        <div className='flex items-center'>
           <ul className="flex space-x-4 text-white">
-            <li>Entradas</li>
-            <li>Principales</li>
-            <li>Postre</li>
-            <li>Bebidas</li>
+            <li><a className='text-white cursor-pointer'>Entradas</a></li>
+            <li><a className='text-white cursor-pointer'>Principales</a></li>
+            <li><a className='text-white cursor-pointer'>Postre</a></li>
+            <li><a className='text-white cursor-pointer'>Bebidas</a></li>
           </ul>
         </div>
-      </nav>
     );
   };
 
