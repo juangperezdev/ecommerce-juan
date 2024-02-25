@@ -1,13 +1,12 @@
-// src/Content.jsx
-import React from 'react';
-import CardList from './CardList/CardList';
+
+import ItemListContainer from './ItemListContainer/ItemListContainer';
 import TitlePage from './TitlePage/TitlePage';
 
 const Content = () => {
     return (
       <main className="min-h-96 container mx-auto">
-        <TitlePage name="Todos los productos" />
-        <CardList />
+        <TitlePage grettings="Bienvenidos a Restaurant Pepito" />
+        <ItemListContainer />
       </main>
     );
   };
