@@ -1,5 +1,4 @@
-// src/Navbar.jsx
-import React from 'react'
+
 import logo from '/logo-restaurant.png'
 import CartWidget from '../CartWidget/CartWidget'
 

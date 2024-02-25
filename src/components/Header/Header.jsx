@@ -1,5 +1,4 @@
-// src/Header.jsx
-import React from 'react'
+
 import Navbar from './Navbar/Navbar'
 import Logo from './Logo/Logo'
 import CartWidget from './CartWidget/CartWidget'

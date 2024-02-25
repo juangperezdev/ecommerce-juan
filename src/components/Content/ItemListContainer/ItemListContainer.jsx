@@ -1,8 +1,8 @@
-// src/CardList.jsx
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const CardList = () => {
+const ItemListContainer = () => {
   const [cardsData, setCardsData] = useState([]);
 
   useEffect(() => {
@@ -39,4 +39,4 @@ const CardList = () => {
   );
 };
 
-export default CardList;
+export default ItemListContainer;
