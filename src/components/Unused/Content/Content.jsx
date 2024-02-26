@@ -1,6 +1,6 @@
 
 import ItemListContainer from './ItemListContainer/ItemListContainer';
-import TitlePage from './TitlePage/TitlePage';
+import TitlePage from '../TitlePage/TitlePage';
 
 const Content = () => {
     return (
