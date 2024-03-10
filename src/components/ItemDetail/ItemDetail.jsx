@@ -14,6 +14,7 @@ const ItemDetail = ({ id, name, category, stock,  img, price, description}) => {
                     <p className="mb-2">Categoria: {category}</p>
                     <p className="mb-2">Descripción: {description}</p>
                     <p className="mb-2">Precio: $ {price}</p>
+                    <span className="text-lg bg-gray">Stock disponible: {stock}</span>
                 </section>           
                 <footer class="p-4">    
                     <ItemCount />

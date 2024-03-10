@@ -11,7 +11,7 @@ const Navbar = () => {
          <div className="flex items-center justify-between w-full p20" >
           <div className="flex items-center">
           <Link to='/'> <img src={logo} alt="Logo" className="h-8 w-18 mr-2" /></Link>
-          <span className="text-white text-lg pr-12 font-semibold">Restaurant Pepito</span>
+          <Link to='/'><span className="text-white text-lg pr-12 font-semibold">Restaurant Pepito</span></Link>
           </div>
         </div>
         <ul className="flex space-x-4 text-white">
