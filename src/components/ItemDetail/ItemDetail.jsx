@@ -17,7 +17,7 @@ const ItemDetail = ({ id, name, category, stock,  img, price, description}) => {
                     <span className="text-lg bg-gray">Stock disponible: {stock}</span>
                 </section>           
                 <footer class="p-4">    
-                    <ItemCount />
+                    <ItemCount stock={stock} />
                 </footer>
             </article>
 
