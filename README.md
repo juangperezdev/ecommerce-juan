@@ -4,6 +4,6 @@ Desarrollo de muestra para Coder House
 
 Comisión ReactJS - #54045
 
-Todo listo para Preentrega1 Juan Gustavo Perez
+Todo listo para Preentrega 2 Juan Gustavo Perez
 
 
