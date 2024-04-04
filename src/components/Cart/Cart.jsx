@@ -1,5 +1,7 @@
 import { useState, useContext } from 'react'
 import { CartContext } from '../../context/CartContex'
+import Checkout from '../Checkout/Checkout';
+import { Link, useNavigate } from 'react-router-dom'
 
 
 
@@ -39,6 +41,7 @@ const items =  cart.cart
           return acc +  (item.price * item.quantity);
         }, 0).toFixed(2)} 
     </div>
+    <Link to='/checkout'>Checkout</Link>
   </div>
 </div>
 
