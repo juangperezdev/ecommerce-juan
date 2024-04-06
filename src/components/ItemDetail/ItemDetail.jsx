@@ -60,8 +60,6 @@ const ItemDetail = ({ id, name, category, stock, img, price, description }) => {
         const objProductToAdd = {
             id, name, price, quantity
         }
-        console.log(objProductToAdd)
-
         setQuantity(quantity)
         addItem(objProductToAdd)
     }
