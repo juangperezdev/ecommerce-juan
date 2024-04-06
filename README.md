@@ -5,7 +5,6 @@ Desarrollo de muestra para Coder House
 Comisión ReactJS - #54045
 
 
-
 Características:
 
     Visualización de productos por categorías y en detalle.
