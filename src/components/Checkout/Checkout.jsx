@@ -82,6 +82,33 @@ export const Checkout = () => {
         }
     };
 
+    if(loading) {
+        return (
+            <div>
+                <h1 className="text-center text-4xl">Su orden está siendo generada...</h1>
+                
+            </div>
+        );
+    }
+    
+    if(orderId) {
+        return (
+            <div>
+                <h1 className="text-center pt-10 text-4xl">El id de su orden es: {orderId}</h1>
+                <Link to="/" className="block w-100 mx-auto mt-4 bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded">Volver al menú</Link>
+            </div>
+        );
+    }
+    
+    if (cart.length === 0) {
+        return (
+            <div>
+                <h1 className="text-center text-4xl">Su carrito está vacío.</h1>
+                <Link to="/" className="block mx-auto mt-4 bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded">Volver al menú</Link>
+            </div>
+        );
+    }
+
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-2xl font-bold mb-4 px-14 text-center">Checkout</h1>
@@ -166,7 +193,7 @@ export const Checkout = () => {
                         />
                     </div>
                 </div>
-                {email === confirmEmail && (
+                {email !== ""  && email === confirmEmail && (
                     <button type="submit" className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600">Generar orden de compra</button>
                 )}
                 {email !== confirmEmail && (
