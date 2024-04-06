@@ -11,7 +11,12 @@ const items =  cart
 
 
 if (cart.length === 0) {
-  return <h1>Su carrito está vacío.</h1>
+  return (
+      <div>
+          <h1 className="text-center text-4xl">Su carrito está vacío.</h1>
+          <Link to="/" className="block mx-auto mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-center rounded">Volver al menú</Link>
+      </div>
+  );
 }
 
   return (
@@ -40,10 +45,10 @@ if (cart.length === 0) {
         ))}
       </tbody>
     </table>
-    <div className="p-4 bg-black-100 text-xl font-semibold">
-      Total : $ {total} 
+    <div className="p-4 bg-black-100 text-xl font-semibold text-right">
+      Total : $ {(total).toFixed(2)} 
     </div>
-    <Link to='/checkout'>Checkout</Link>
+    <div className="text-center"><Link to='/checkout'>Ir al Checkout</Link></div>
   </div>
 </div>
 

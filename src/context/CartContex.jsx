@@ -1,16 +1,18 @@
 import { useState, createContext } from 'react'
-
+import { useNotification } from '../notification/hooks/useNotification'
 export const CartContext = createContext()
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
-    console.log('CART: ', cart)
+    const { showNotification } = useNotification()
+ 
   
     const addItem = (productToAdd) => {
       if(!isInCart(productToAdd.id)) {
         setCart(prev => [...prev, productToAdd])
+        showNotification('success', 'Producto agregado correctamente')
       } else {
-        console.error('El producto ya esta agregado')
+        showNotification('error', 'El oroducto ya existe en el carrito')
       }
     }
   
@@ -24,7 +26,9 @@ export const CartProvider = ({ children }) => {
 
     const removeItem = (id) => {
       const updatedCart = cart.filter(prod => prod.id !== id)
+
       setCart(updatedCart)
+      showNotification('success', 'Producto eliminado correctamente')
     }
 
     const getTotalQuantity = () => {

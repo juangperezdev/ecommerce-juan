@@ -19,7 +19,7 @@ const ItemListContainer = ({ greeting }) => {
     useEffect(() => {
         setTimeout(() => {
             setRender(prev => !prev)
-        }, 2000)
+        }, 1000)
     }, [])
 
     useEffect(() => {
