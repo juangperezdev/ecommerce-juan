@@ -28,7 +28,7 @@ export const CartProvider = ({ children }) => {
       const updatedCart = cart.filter(prod => prod.id !== id)
 
       setCart(updatedCart)
-      showNotification('success', 'Producto eliminado correctamente')
+      showNotification('info', 'Producto eliminado correctamente')
     }
 
     const getTotalQuantity = () => {
