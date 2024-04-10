@@ -18,6 +18,7 @@ const ItemDetailContainer = () => {
         getDoc(productDoc)
             .then(queryDocumentSnapshot => {
                 const data = queryDocumentSnapshot.data()
+                console.log(data)
                 if (queryDocumentSnapshot.exists()) {
                     const productAdapted = { id: queryDocumentSnapshot.id, ...data }
                     setProduct(productAdapted)

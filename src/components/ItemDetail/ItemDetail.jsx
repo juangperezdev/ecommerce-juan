@@ -46,6 +46,7 @@ const ButtonCount = ({ onAdd, stock, initial = 1 }) => {
 }
 
 const ItemDetail = ({ id, name, category, stock, img, price, description }) => {
+    console.log(description)
     const [inputType, setInputType] = useState('button')
     const [quantity, setQuantity] = useState(0)
     const ItemCountComponent = inputType === 'input' ? InputCount : ButtonCount
@@ -53,7 +54,7 @@ const ItemDetail = ({ id, name, category, stock, img, price, description }) => {
     const { addItem } = useContext(CartContext)
     const { showNotification } = useNotification()
 
- 
+    
 
 
     const handleOnAdd = (quantity) => {
